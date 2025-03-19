@@ -312,6 +312,8 @@ h2 {
 .takeout-image {
   width: 60%;
   background-image: url(./image/menu252x-1200x1375.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
 }
 
