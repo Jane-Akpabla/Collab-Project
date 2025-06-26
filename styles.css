@@ -16,7 +16,6 @@ body {
   line-height: 1.6;
 }
 
-
 .header {
   position: fixed;
   width: 100%;
@@ -124,7 +123,7 @@ body {
   color: white;
   z-index: 1;
   padding: 4rem;
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .hero-subtitle {
@@ -287,10 +286,10 @@ h2 {
 }
 
 .auto-image {
-    background: url(./image/chef.jpg);
-    background-size: cover; /* Corrected property */
-    background-position: center; /* Ensures the image is centered */
-    background-repeat: no-repeat; /* Prevents repeating */
+    background: url("https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 50%;
     max-width: 600px;
     height: 80vh;
@@ -299,8 +298,8 @@ h2 {
 }
 
 .auto-image:hover {
-    transform: scale(1.03); /* Scales the div */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a slight shadow */
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* ======...........Takeout Section...............=======*/
@@ -311,7 +310,7 @@ h2 {
 
 .takeout-image {
   width: 60%;
-  background-image: url(./image/menu252x-1200x1375.jpg);
+  background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop");
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
@@ -330,7 +329,6 @@ h2 {
   justify-content: center;
   align-items: first baseline;
   gap: 20px;
-
 }
 
 .takeout-text {
@@ -357,7 +355,7 @@ h2 {
 }
 
 .main-course {
-  background: url(./image/misc22x.jpg);
+  background: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop");
   background-size: cover;
   background-position: center;
   color: white;
@@ -382,7 +380,7 @@ h2 {
 }
 
 .menu-card h2, h3 {
-  font-family: bebas neue;
+  font-family: "bebas neue", sans-serif;
   font-weight: 400;
 }
 
@@ -404,7 +402,7 @@ h2 {
 
 .footer {
   position: relative;
-  background: url('./image/slider52x-1200x1107.jpg') no-repeat center center/cover;
+  background: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop') no-repeat center center/cover;
   text-align: center;
   padding: 60px 20px;
   color: white;
@@ -505,7 +503,6 @@ h2 {
   text-decoration: underline;
 }
 
-
 @media (max-width: 1024px) {
   .hero-title {
     font-size: 4rem;
@@ -542,6 +539,14 @@ h2 {
     scale: 0.9;
   }
 
+  .takeout {
+    flex-direction: column;
+  }
+
+  .takeout-image,
+  .takeout-content {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -593,9 +598,6 @@ h2 {
     font-size: 52px;
     line-height: 1.1;
   }
-
- 
-
 }
 
 @media (max-width: 480px) {
@@ -613,6 +615,7 @@ h2 {
 
   .hero-content {
     text-align: center;
+    padding: 2rem;
   }
 
   .hero-title {
@@ -630,5 +633,9 @@ h2 {
   .cta-button {
     width: 100%;
     text-align: center;
+  }
+
+  .menu-card {
+    padding: 30px 20px;
   }
 }
