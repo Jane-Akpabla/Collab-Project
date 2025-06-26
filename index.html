@@ -4,284 +4,756 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shogun Restaurant</title>
+    <title>Shogun Restaurant - Authentic Japanese Fine Dining</title>
+    <meta name="description" content="Experience authentic Japanese cuisine at Shogun Restaurant. Fine dining with fresh ingredients and traditional flavors in an elegant atmosphere.">
     <link rel="stylesheet" href="styles.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">将</div>
+                <div class="loading-text">SHOGUN</div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
             <a href="#" class="logo">
-                <div class="logo-circle">R</div>
-                <div class="logo-text">SHOGUN RESTAURANT</div>
+                <div class="logo-circle">将</div>
+                <div class="logo-text">SHOGUN</div>
             </a>
-            <button class="menu-toggle">☰</button>
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">History</a>
-                <a href="#">Team</a>
-                <a href="./menu page/menu.html">Menu</a>
-                <a href="#">Takeout</a>
-                <a href="#">Bulletin</a>
-                <a href="#">Reservations</a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#reservation" class="btn btn-primary">Reserve Table</a>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
-    <!-----------Hero Section---------->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-subtitle">The Best Table in Town</div>
-            <h1 class="hero-title">FINE DINING<br />EXPERIENCE</h1>
-            <p class="hero-description">
-                Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
-                scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis.
-            </p>
-            <a href="#" class="cta-button">Explore the menu</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-subtitle" data-aos="fade-up">Authentic Japanese Cuisine</span>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                    Experience the Art of<br>
+                    <span class="gradient-text">Fine Dining</span>
+                </h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                    Immerse yourself in centuries-old culinary traditions, where every dish tells a story of passion, precision, and authentic Japanese flavors.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#about" class="btn btn-outline">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+                <div class="stat-item">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Signature Dishes</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <!-----------Autograph Section---------->
-    <section class="autograph">
-        <div class="auto-text">
-            <p>
-                <b>HAC TELLUS, FELIS RISUS AT</b> mattis mattis. Eget euismod semper
-                eget tortor, donec amet, blandit. Tristique facilisi faucibus
-                elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis
-                amet vulputate.
-            </p>
-            <h2>food is our common ground, a universal experience.</h2>
-            <p>
-                Tristique tempus condimentum diam donec. Condimentum ullamcorper sit
-                elementum hendrerit mi nulla in consequat, ut. Metus, nullam
-                scelerisque netus viverra dui.
-            </p>
-            <img src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=200&h=100&fit=crop" alt="signature" />
-        </div>
-
-        <div class="auto-image"></div>
-    </section>
-
-    <!----------------------Feature Section-------------------------------->
-
-    <section class="feature">
-        <div class="feature-item">
-            <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Sushi" />
-            <h3>THE BEST TABLE IN TOWN</h3>
-            <hr />
-            <p>
-                Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus
-                tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id
-                gravida aliquet.
-            </p>
-            <a href="#" class="btn">EXPLORE THE MENU</a>
-        </div>
-
-        <div class="feature-item">
-            <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Bread" />
-            <h3>PERFECT FOR GROUPS</h3>
-            <hr />
-            <p>
-                Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus
-                tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id
-                gravida aliquet.
-            </p>
-            <a href="#" class="btn">MAKE RESERVATIONS</a>
-        </div>
-
-        <div class="feature-item">
-            <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Vegetable" />
-            <h3>FRESH PRODUCE EVERYDAY</h3>
-            <hr />
-            <p>
-                Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus
-                tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id
-                gravida aliquet.
-            </p>
-            <a href="#" class="btn">LEARN MORE ABOUT US</a>
-        </div>
-    </section>
-
-    <!----------------------Takeout Section-------------------------------->
-    <section class="takeout">
-        <div class="takeout-image"></div>
-        <div class="takeout-content">
-            <div class="content-arr">
-                <div><hr width="60px"></div>
-                <div class="takeout-text">
-                    <div class="hero-subtitle">
-                        FINE DINING EXPERIENCE</div>
-                    <h1 class="hero-title">THE BEST TABLE<br>IN TOWN</h1>
-                    <p class="hero-description">
-                        Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
-                        scelerisque nisi in urna nulla. Sit tempor a et nisi, ac felis.
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <span class="section-subtitle">Our Heritage</span>
+                    <h2 class="section-title">Where Tradition Meets Innovation</h2>
+                    <p class="about-description">
+                        For over two decades, Shogun has been a beacon of authentic Japanese cuisine, blending time-honored traditions with contemporary culinary artistry. Our master chefs, trained in the ancient techniques of Japan, create each dish with meticulous attention to detail.
                     </p>
-                    <a href="#" class="cta-button">Explore the menu</a>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Daily sourced premium ingredients from local and international suppliers</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Master Chefs</h4>
+                                <p>Trained in traditional Japanese culinary arts with decades of experience</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Authentic Experience</h4>
+                                <p>Every detail crafted to transport you to the heart of Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef-signature">
+                        <img src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=200&h=100&fit=crop" alt="Chef Signature" class="signature-img">
+                        <div class="signature-text">
+                            <p><em>"Food is our common ground, a universal experience that brings people together."</em></p>
+                            <span>- Chef Takeshi Yamamoto</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Master Chef" class="chef-image">
+                        <div class="image-decoration"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!----------------------Menu Section---------------------------->
-    <section class="menu-cards" id="menu">
-        <div class="menu-card">
-            <h2 class="food-title">HORS D'OEUVRES</h2>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">AHI SALMON NIGIRI</h3>
-                    <p class="price">$48</p>
-                </div>
-                <p class="food-details">
-                    Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit
-                    lacinia.
-                </p>
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Exceptional Dining Experiences</h2>
             </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">TUNA SASHIMI</h3>
-                    <p class="price">$52</p>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Fine Dining">
+                    </div>
+                    <h3>Fine Dining</h3>
+                    <p>Experience the pinnacle of Japanese cuisine with our carefully curated tasting menus and premium ingredients.</p>
+                    <a href="#menu" class="service-link">Explore Menu <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <p class="food-details">
-                    Fresh tuna served with wasabi and pickled ginger.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">CALIFORNIA ROLL</h3>
-                    <p class="price">$38</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Private Events">
+                    </div>
+                    <h3>Private Events</h3>
+                    <p>Host unforgettable celebrations in our elegant private dining rooms, perfect for intimate gatherings and corporate events.</p>
+                    <a href="#contact" class="service-link">Book Event <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <p class="food-details">
-                    Classic roll with crab, avocado, and cucumber.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">MISO SOUP</h3>
-                    <p class="price">$18</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Takeout">
+                    </div>
+                    <h3>Premium Takeout</h3>
+                    <p>Enjoy our signature dishes from the comfort of your home with our premium takeout service and elegant packaging.</p>
+                    <a href="#contact" class="service-link">Order Now <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <p class="food-details">
-                    Traditional Japanese soup with tofu and seaweed.
-                </p>
-            </div>
-        </div>
-        <div class="menu-card main-course">
-            <h2 class="food-title">MAIN COURSES</h2>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">TERIYAKI SALMON</h3>
-                    <p class="price">$68</p>
-                </div>
-                <p class="food-details">
-                    Grilled salmon glazed with house teriyaki sauce.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">BEEF YAKITORI</h3>
-                    <p class="price">$72</p>
-                </div>
-                <p class="food-details">
-                    Grilled beef skewers with tare glaze.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">CHICKEN KATSU</h3>
-                    <p class="price">$58</p>
-                </div>
-                <p class="food-details">
-                    Crispy breaded chicken with tonkatsu sauce.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">VEGETABLE TEMPURA</h3>
-                    <p class="price">$45</p>
-                </div>
-                <p class="food-details">
-                    Lightly battered and fried seasonal vegetables.
-                </p>
-            </div>
-        </div>
-        <div class="menu-card">
-            <h2 class="food-title">DESSERTS</h2>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">MOCHI ICE CREAM</h3>
-                    <p class="price">$28</p>
-                </div>
-                <p class="food-details">
-                    Traditional Japanese rice cake with ice cream.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">DORAYAKI</h3>
-                    <p class="price">$25</p>
-                </div>
-                <p class="food-details">
-                    Pancake sandwich filled with sweet red bean paste.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">MATCHA CHEESECAKE</h3>
-                    <p class="price">$32</p>
-                </div>
-                <p class="food-details">
-                    Creamy cheesecake infused with premium matcha.
-                </p>
-            </div>
-            <div class="food">
-                <div class="food-price">
-                    <h3 class="food-name">TAIYAKI</h3>
-                    <p class="price">$22</p>
-                </div>
-                <p class="food-details">
-                    Fish-shaped pastry filled with sweet custard.
-                </p>
             </div>
         </div>
     </section>
 
-    <!----------------------Footer Section---------------------------->
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Specialties</span>
+                <h2 class="section-title">Signature Menu</h2>
+            </div>
+            
+            <div class="menu-tabs" data-aos="fade-up" data-aos-delay="200">
+                <button class="tab-btn active" data-tab="appetizers">Appetizers</button>
+                <button class="tab-btn" data-tab="mains">Main Courses</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+                <button class="tab-btn" data-tab="beverages">Beverages</button>
+            </div>
+
+            <div class="menu-content">
+                <div class="tab-content active" id="appetizers">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Ahi Salmon Nigiri">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Ahi Salmon Nigiri</h3>
+                                    <span class="price">$48</span>
+                                </div>
+                                <p>Premium grade salmon served over seasoned sushi rice with wasabi and pickled ginger</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Fresh</span>
+                                    <span class="tag">Premium</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Tuna Sashimi">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Bluefin Tuna Sashimi</h3>
+                                    <span class="price">$65</span>
+                                </div>
+                                <p>Expertly sliced bluefin tuna, served with traditional accompaniments and house-made soy sauce</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Chef's Choice</span>
+                                    <span class="tag">Seasonal</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Gyoza">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Handmade Gyoza</h3>
+                                    <span class="price">$28</span>
+                                </div>
+                                <p>Pan-fried dumplings filled with seasoned pork and vegetables, served with ponzu dipping sauce</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Handmade</span>
+                                    <span class="tag">Popular</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Wagyu Beef">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>A5 Wagyu Teppanyaki</h3>
+                                    <span class="price">$180</span>
+                                </div>
+                                <p>Premium A5 grade Wagyu beef grilled to perfection with seasonal vegetables and garlic fried rice</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Premium</span>
+                                    <span class="tag">Signature</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Teriyaki Salmon">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Miso Glazed Black Cod</h3>
+                                    <span class="price">$85</span>
+                                </div>
+                                <p>Delicate black cod marinated in sweet miso glaze, served with steamed vegetables and jasmine rice</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Chef's Special</span>
+                                    <span class="tag">Healthy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Ramen">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Tonkotsu Ramen</h3>
+                                    <span class="price">$38</span>
+                                </div>
+                                <p>Rich pork bone broth with handmade noodles, chashu pork, soft-boiled egg, and fresh scallions</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Comfort Food</span>
+                                    <span class="tag">Authentic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Matcha Cheesecake">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Matcha Cheesecake</h3>
+                                    <span class="price">$32</span>
+                                </div>
+                                <p>Creamy cheesecake infused with premium Uji matcha, served with red bean ice cream</p>
+                                <div class="menu-tags">
+                                    <span class="tag">House Made</span>
+                                    <span class="tag">Premium Matcha</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Mochi">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Artisan Mochi Selection</h3>
+                                    <span class="price">$28</span>
+                                </div>
+                                <p>Handcrafted mochi ice cream in seasonal flavors: black sesame, yuzu, and sakura</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Seasonal</span>
+                                    <span class="tag">Traditional</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Dorayaki">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Dorayaki Parfait</h3>
+                                    <span class="price">$25</span>
+                                </div>
+                                <p>Deconstructed dorayaki with layers of pancake, sweet red bean, and vanilla bean ice cream</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Creative</span>
+                                    <span class="tag">Instagram Worthy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="beverages">
+                    <div class="menu-grid">
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Sake">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Premium Sake Flight</h3>
+                                    <span class="price">$45</span>
+                                </div>
+                                <p>Curated selection of three premium sakes from different regions of Japan</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Curated</span>
+                                    <span class="tag">Educational</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Japanese Whisky">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Hibiki 17 Year</h3>
+                                    <span class="price">$85</span>
+                                </div>
+                                <p>Award-winning Japanese whisky with complex flavors and smooth finish</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Premium</span>
+                                    <span class="tag">Limited</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="menu-image">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Green Tea">
+                                <div class="menu-overlay">
+                                    <button class="view-btn"><i class="fas fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="menu-header">
+                                    <h3>Ceremonial Matcha</h3>
+                                    <span class="price">$18</span>
+                                </div>
+                                <p>Traditional matcha tea ceremony experience with premium grade matcha powder</p>
+                                <div class="menu-tags">
+                                    <span class="tag">Ceremonial</span>
+                                    <span class="tag">Authentic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Visual Experience</span>
+                <h2 class="section-title">Gallery</h2>
+            </div>
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item large">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <h3>Elegant Interior</h3>
+                        <p>Modern Japanese aesthetics</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Sushi Preparation">
+                    <div class="gallery-overlay">
+                        <h3>Master Craftsmanship</h3>
+                        <p>Artful preparation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Private Dining">
+                    <div class="gallery-overlay">
+                        <h3>Private Dining</h3>
+                        <p>Intimate experiences</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Chef at Work">
+                    <div class="gallery-overlay">
+                        <h3>Culinary Excellence</h3>
+                        <p>Passion in every dish</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Sake Collection">
+                    <div class="gallery-overlay">
+                        <h3>Premium Sake</h3>
+                        <p>Curated selection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What Our Guests Say</span>
+                <h2 class="section-title">Testimonials</h2>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"An absolutely extraordinary dining experience. The attention to detail and authentic flavors transported us straight to Japan. The service was impeccable and the atmosphere was perfect for our anniversary celebration."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Food Critic, Culinary Magazine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The wagyu beef was simply divine, and the sake pairing was expertly chosen. Chef Yamamoto's creativity shines through every dish. This is definitely our new favorite restaurant for special occasions."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Michael Chen">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"From the moment we walked in, we were treated like family. The omakase experience was incredible - each course was a work of art. The staff's knowledge of the menu and wine pairings was impressive."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Emily Rodriguez">
+                            <div>
+                                <h4>Emily Rodriguez</h4>
+                                <span>Business Executive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="nav-dot active" data-slide="0"></button>
+                <button class="nav-dot" data-slide="1"></button>
+                <button class="nav-dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-text" data-aos="fade-right">
+                    <span class="section-subtitle">Book Your Table</span>
+                    <h2 class="section-title">Make a Reservation</h2>
+                    <p>Experience the finest Japanese cuisine in an elegant atmosphere. Reserve your table today for an unforgettable dining experience.</p>
+                    <div class="reservation-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Mon-Thu: 5:30PM - 10:00PM<br>Fri-Sat: 5:30PM - 11:00PM<br>Sun: 5:30PM - 9:30PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Reservations</h4>
+                                <p>+1 (555) 123-4567<br>reservations@shogunrestaurant.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form" data-aos="fade-left">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                            <select required>
+                                <option value="">Party Size</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6+">6+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required>
+                            <select required>
+                                <option value="">Preferred Time</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea placeholder="Special Requests (Optional)" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Reserve Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Visit Us</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Sakura Street<br>Downtown District<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@shogunrestaurant.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map" data-aos="fade-left">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive Map</p>
+                        <span>Click to view location</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-overlay"></div>
-        <div class="footer-content">
-            <a href="#" class="logo">
-                <div class="logo-circle">R</div>
-                <div class="logo-text">SHOGUN RESTAURANT</div>
-            </a>
-            <p>Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu proin sit massa
-                condimentum.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-circle">将</div>
+                        <div class="logo-text">SHOGUN</div>
+                    </a>
+                    <p>Experience the finest Japanese cuisine with authentic flavors, premium ingredients, and exceptional service in an elegant atmosphere.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Fine Dining</a></li>
+                        <li><a href="#">Private Events</a></li>
+                        <li><a href="#">Takeout</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Sakura Street, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@shogunrestaurant.com</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>©2025 • All Rights Reserved • Developed by <a href="#">Kwame and Janet</a></p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shogun Restaurant. All rights reserved. | Developed by <a href="#">Kwame and Janet</a></p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
